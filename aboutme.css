@@ -1,8 +1,11 @@
+/* Cambiar una foto por otra y efecto hover de mi foto */
 .foto-Caja {
     position: relative;
     width: 300px;
     height: 300px;
     overflow: hidden;
+
+    margin: 2rem auto;
 }
 
 .foto {
@@ -24,7 +27,7 @@
     opacity: 0;
 }
 
-/* Hover */
+
 .foto-Caja:hover .foto-Real {
     opacity: 0;
 }
@@ -32,3 +35,87 @@
 .foto-Caja:hover .foto-Jojo {
     opacity: 1;
 }
+/* Fin de cambio de foto y efecto hover */
+
+/* Fondo */
+
+body {
+    background-image: url("Foto/ioio_Sky.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: white;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Fin de fondo*/
+
+/* Fuentes */
+
+@font-face {
+    font-family: "JoJo";
+    src: url("fonts/SF Fedora.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "JoJo Subtitulo";
+    src: url("fonts/SF-Fedora-Titles-Italic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Fin de fuentes*/
+
+/*Modificacion de header H1*/
+
+header h1 {
+    font-family: "JoJo", serif;
+    font-size: 4rem;
+    letter-spacing: 2px;
+
+    display: inline-block;
+
+    background: linear-gradient(180deg, #ff4ecd, #ffffff);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    background-clip: text;
+    color: transparent;
+
+    -webkit-text-stroke: 1.5px black;
+}
+header {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/*Fin de modificacion de header H1*/
+
+/*Modificando H2*/
+
+h2 {
+    font-family: "Jojo Subtitulo", sans-serif;
+    margin-top: 2rem;
+    letter-spacing: 1px;
+
+    display: inline-block;
+    padding: 0.5rem 1.2rem;
+
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    color:#ff4ecd;
+}
+
+
+/*Fin de h2*/
